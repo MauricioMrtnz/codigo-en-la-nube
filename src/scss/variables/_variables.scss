@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,500,700,900);
+
+// VARIABLES DE COLOR//
+
+$rojoPrincipal:  #DD141D;
+$negroPrincipal: #000000;
+
+//////// ESCALA DE GRISES/////
+$blanco:#FFFFFF;
+
+$grisEE:#EEEEEE;
+
+$grisDD:#DDDDDD;
+
+$grisBC:#BCBCBC;
+
+$gris57:#575757;
+
+$gris38:#383838;
+
+$gris1E:#1E1E1E;
+
+$gris70:#707070;
+
+$gris48:#48484843;
+
+$grisDC:#DEDDDC;
+
+$gris7B:#7B7B7B;
+
+$gris19:#4D4D4D;
+
+$grisEF:#EFEFEF;
+
+
+/////////// colores con opacidad
+$grisOpa40:#70707040;
+
+
+/////////////////// Feedback ///////@at-root
+
+$rojo22:#C22A22;
+
+$verde33:#07a133;
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////// VARIABLES DE GROSOR DE TEXTO
+
+$midium:300;
+$regular:400;
+$bold:700;
+
+$condensadaRegular:400;
+
+/////////////////////////// FUENTES 
+
+$condensada: "Roboto Condensed",sans-serif;
+$roboto: "Roboto",sans-serif;
+
+////////////////////////////// POSICIONES
+
+$posicionRelative:relative;
+$posicionAbsolute:absolute;

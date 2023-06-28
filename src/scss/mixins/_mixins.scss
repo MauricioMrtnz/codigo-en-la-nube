@@ -1,0 +1,125 @@
+//////// MIXIN DE TEXTO//////////////////////
+
+//tamaño de funte 10px
+@mixin fontSize01 {
+    font-size: 0.63rem;
+    line-height: 16px;
+}
+//tamaño de funte 12px
+@mixin fontSize10 {
+    font-size: 0.75rem;
+    line-height: 16px;
+}
+//tamaño de funte 14px
+@mixin fontSize02 {
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+//tamaño de funte 16px
+@mixin fontSize03 {
+    font-size: 1rem;
+    line-height: 20px;
+}
+//tamaño de funte 18px
+@mixin fontSize04 {
+    font-size: 1.125rem;
+    line-height: 24px;
+}
+//tamaño de funte 20px
+@mixin fontSize05 {
+    font-size: 1.3rem;
+    line-height: 28px;
+}
+//tamaño de funte 22px
+@mixin fontSize06 {
+    font-size: 1.38rem;
+    line-height: 28px;
+}
+//tamaño de funte 24px
+@mixin fontSize07 {
+    font-size: 1.5rem;
+    line-height: 28px;
+}
+
+//tamaño de funte 26px
+@mixin fontSize08 {
+    font-size: 1.63rem;
+    line-height: 28px;
+}
+
+//tamaño de funte 28px
+@mixin fontSize09 {
+    font-size: 1.65rem;
+    line-height: 28px;
+}
+
+@mixin titulosSubBase {
+    font-family: $condensada;
+}
+
+//////// MIXIN DE POSICION//////////////////////
+@mixin centerHorizontal {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@mixin centerVertical {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+@mixin centerBetween {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+@mixin centerStart {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+/////////////////// HEADERS
+
+@mixin header {
+    width: 100vw;
+    height: 46px;
+    padding: 8px;
+}
+
+
+//////////////////////////// FORMULARIOS
+
+@mixin label{
+    font-family: $condensada;
+    @include fontSize07;
+
+    @media only screen and (max-width: 1040px){
+        @include fontSize03;
+    }
+}
+
+@mixin inputType {
+    background-color: $grisEF;
+    width: 100%;
+    caret-color: $negroPrincipal;
+    height: 43px;
+    font-weight: $regular;
+    @include fontSize06;
+    font-family: $condensada;
+}
+
+
+@mixin placehold {
+    font-family: $condensada;
+    @include fontSize06;
+    font-weight: 400;
+    padding-bottom: 7px;
+
+    @media only screen and (max-width: 1040px){
+        @include fontSize03;
+    }
+}

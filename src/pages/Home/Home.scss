@@ -1,0 +1,25 @@
+@import "../../scss/main.scss";
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+    height: 300px;
+    &__logo{
+        width: 200px;
+        height: 150px;
+    }
+    &__title{
+        @include fontSize09;
+        padding: 8px;
+        font-family: $roboto;
+        font-weight: $bold;
+    }
+    &__subTitle{
+        @include fontSize06;
+        padding: 10px;
+        font-family: $roboto;
+        color: $gris57;
+    }
+}

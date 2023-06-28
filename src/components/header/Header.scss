@@ -1,0 +1,63 @@
+@import "../../scss/main.scss";
+
+.header {
+    width: 100%;
+    height: 56px;
+    background-color: $blanco;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+
+    &__logo {
+        display: flex;
+        padding-left: 24px;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+
+        &__imagen {
+            width: 50px;
+            height: 40px;
+        }
+
+        &__texto {
+            color: $gris57;
+            @include fontSize08;
+            font-family: $condensada;
+            a{
+                color: $gris57;
+                text-decoration: none;
+
+                &:hover {
+                    color: $rojoPrincipal;
+                }
+            }
+        }
+    }
+
+    &__nav {
+        padding-right: 24px;
+
+        &__lista {
+            display: flex;
+            padding-right: 8px;
+            gap: 16px;
+
+            &__item {
+                color: $gris57;
+                @include fontSize04;
+                font-family: $condensada;
+
+                a {
+                    color: $gris57;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $rojoPrincipal;
+                    }
+                }
+            }
+        }
+    }
+}
