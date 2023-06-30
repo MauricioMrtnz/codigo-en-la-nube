@@ -1,0 +1,71 @@
+@import '../../scss/main.scss';
+
+
+.docNav {
+    &__button {
+      width: 100%;
+      padding: 5px 0px;
+  
+      &__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+  
+        &:hover {
+          cursor: pointer;
+          background-color: #f5f5f5;
+        }
+        &__title {
+          font-family: $condensada;
+          color: $gris57;
+          @include fontSize04;
+        }
+        &__img {
+          transform: rotate(90deg);
+          transition: transform 0.5s ease;
+          &.visible {
+            transform: rotate(180deg);
+          }
+        }
+      }
+  
+      &__list {
+        font-family: $roboto;
+        @include fontSize02;
+        padding-left: 8px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+  
+        &.visible {
+          max-height: 200px; /* Altura máxima deseada */
+        }
+        &__item {
+          padding: 5px;
+          a {
+            color: $gris57;
+            text-decoration: none;
+          }
+          &:hover {
+            background-color: #f5f5f5;
+  
+            a {
+              color: $rojoPrincipal;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(90deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  

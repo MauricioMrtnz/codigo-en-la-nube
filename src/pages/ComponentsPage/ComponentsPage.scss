@@ -1,1 +1,12 @@
 @import "../../scss/main.scss";
+
+.docNav {
+  padding: 60px 16px 0px 16px;
+  width: 200px;
+  height: 100vh;
+  border: 0;
+  // background-color: #fffbfb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,6 +1,7 @@
 import "./ListaOpciones.scss";
-import flecha from "../../../assets/icons/iconoFlecha.svg";
+import flecha from "../../assets/icons/iconoFlecha.svg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const ListaOpciones = (props) => {
   
@@ -23,7 +24,7 @@ export const ListaOpciones = (props) => {
       <ul className={`docNav__button__list ${isVisible ? 'visible' : ''}`}>
         {props.ListaOpciones.map((opcion, index) => (
           <li className="docNav__button__list__item" key={index}>
-          <a href=""> {opcion}</a>  
+            <Link to={props.title+'/'+opcion} >{opcion}</Link>
           </li>
         ))}
       </ul>

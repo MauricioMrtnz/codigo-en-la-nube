@@ -1,5 +1,7 @@
 import './Docs.scss'
-import {ListaOpciones} from './components/ListaOpciones'
+import {ListaOpciones} from '../../components/listaOpciones/ListaOpciones'
+import { Route, Routes, Outlet } from 'react-router-dom'
+
 
 
 export const Docs = () => {
@@ -12,7 +14,7 @@ export const Docs = () => {
             ></ListaOpciones>
                  <ListaOpciones
                 title='Buenas Practicas'
-                ListaOpciones={['Introduccion', 'Instalacion', 'Primeros Pasos']}
+                ListaOpciones={['Scss', 'React', 'Angular']}
               ></ListaOpciones>
                  <ListaOpciones
                 title='Componentes'
@@ -24,7 +26,7 @@ export const Docs = () => {
               ></ListaOpciones>
         </nav>
         <section className='documentacion'>
-
+          <Outlet/>
         </section>
       </main>
     )

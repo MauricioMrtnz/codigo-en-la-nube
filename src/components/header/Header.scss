@@ -8,6 +8,10 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 10px;
+    @media only screen and (max-width: 768px)  {  
+       flex-direction: row-reverse;
+        box-shadow: 0px 0px 22px -7px rgba(0, 0, 0, 0.62);
+    } 
 
     &__logo {
         display: flex;
@@ -15,6 +19,9 @@
         gap: 8px;
         align-items: center;
         justify-content: center;
+        @media only screen and (max-width: 768px)  {  
+            padding-right: 24px;
+         } 
 
         &__imagen {
             width: 50px;
@@ -35,9 +42,42 @@
             }
         }
     }
+    
+    &__hamburguesa{
+        @media only screen and (min-width: 768px)  {  
+           display: none;
+           padding-left: 24px;
+         } 
+         @media only screen and (max-width: 768px)  {  
+            padding-left: 24px;
+         } 
+        &:hover{
+            cursor: pointer;
+        }
+        &__icon{
+            width: 30px;
+        }
+    }
+
+    &__close{
+        display: none;
+         @media only screen and (max-width: 768px)  {  
+            padding-left: 24px;
+         } 
+        &:hover{
+            cursor: pointer;
+        }
+        &__icon{
+            width: 20px;
+        }
+    }
 
     &__nav {
         padding-right: 24px;
+        @media only screen and (max-width: 768px)  {  
+            padding-left: 24px;
+            display: none;
+         } 
 
         &__lista {
             display: flex;

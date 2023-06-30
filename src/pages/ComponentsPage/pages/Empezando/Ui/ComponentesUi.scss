@@ -1,0 +1,21 @@
+@import '../../../../../scss/main.scss';
+
+
+.componentesUi{
+    &__titulo{
+        
+        padding: 20px;
+        &__texto{
+            @include fontSize09;
+        font-family: $condensada;
+        color: $gris57;
+        }
+    }
+    &__descripcion{
+        padding: 20px;
+        &__texto{
+            @include fontSize04;
+            font-family: $condensada;
+            color: $gris57;
+        }}
+}
